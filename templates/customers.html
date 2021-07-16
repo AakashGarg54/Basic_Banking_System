@@ -1,0 +1,26 @@
+{% extends "index.html" %}
+{% block title %} All Customers Details{% endblock title %}
+{% block body %}
+
+<h1 class="d-flex justify-content-center my-3">Customers Details</h1>
+
+<table class="table table-hover table-striped container my-5">
+    <tr>
+        <th scope="col">SI No.</th>
+        <th scope="col">Name</th>
+        <th scope="col">E-mail Id</th>
+        <th scope="col">Bank Balance ($)</th>
+    </tr>
+    {% for cstmer in allrows %}
+    <tr>
+        <td><a class="text-decoration-none text-muted" href="/customers/{{cstmer.name}}">{{loop.index}}</a></td>
+        <td><a class="text-decoration-none text-muted" href="/customers/{{cstmer.name}}">{{cstmer.name}}</a></td>
+        <td><a class="text-decoration-none text-muted" href="/customers/{{cstmer.name}}">{{cstmer.emailid}}</a></td>
+        <td><a class="text-decoration-none text-muted" href="/customers/{{cstmer.name}}">{{cstmer.balance}}</a></td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+
+{% endblock body %}

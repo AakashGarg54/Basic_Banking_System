@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Sans&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+
+header nav,
+footer {
+    height: 10vh;
+    display: flex;
+    width: 100vw !important;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+}
+
+.body {
+    min-height: 77vh;
+}
+
+.btn-1,
+.btn-2 {
+    width: 15vw;
+    height: 3vw;
+}
+
+.btn-1 {
+    margin: 2vw 0 0 27vw !important;
+}
+
+.btn-2 {
+    margin: 2vw 0 0 16vw !important;
+}
+
+.btn-1:hover,
+.btn-2:hover {
+    box-shadow: 0 0 12px rgb(35 173 255);
+
+}
+
+.para {
+    font-size: 15px;
+}
+
+img {
+    width: 50vw;
+    height: 50vh;
+    margin: 0 25vw;
+}
+
+.btn-1,
+.btn-2 {
+    width: 15vw;
+    height: 3vw;
+}
+
+.btn-1 {
+    margin: 2vw 0 0 27vw !important;
+}
+
+.btn-2 {
+    margin: 2vw 0 0 16vw !important;
+}
+
+.btn-1:hover,
+.btn-2:hover {
+    box-shadow: 0 0 12px rgb(35 173 255);
+
+}
+
+.error {
+    min-height: 56vh;
+}

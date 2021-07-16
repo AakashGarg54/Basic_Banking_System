@@ -1,0 +1,33 @@
+{% extends "index.html" %}
+{% block title %} {{cst.name}} - Transfer History {% endblock title %}
+{% block body %}
+
+<h1 class="d-flex justify-content-center my-3">Transfer History</h1>
+
+<a href="/customers"><button type="button" class="btn-1 btn btn-primary">Customer Details </button>
+</a>
+<a href="/transfer"><button type="button" class="btn-2 btn btn-primary">Transfer Details </button>
+</a>
+
+<table class="table table-striped container my-5">
+    <thead>
+        <tr>
+            <th scope="col">Sno</th>
+            <th scope="col">Transfer From</th>
+            <th scope="col">Transfer To</th>
+            <th scope="col">Amount Transfered($)</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for cstmer in allrows %}
+        <tr>
+            <td>{{loop.index}}</td>
+            <td>{{cstmer.transfer_from}}</td>
+            <td>{{cstmer.transfer_to}}</td>
+            <td>{{cstmer.amount}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock body %}

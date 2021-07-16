@@ -1,0 +1,49 @@
+{% extends "index.html" %}
+{% block title %} {{cst.name}} {% endblock title %}
+{% block body %}
+
+<h1 class="d-flex justify-content-center my-3">About {{cst.name}}</h1>
+<h3 class="my-1 text-center fw-bold">Name : {{cst.name}}</h3>
+<h4 class="my-1 text-center">Email Id : {{cst.emailid}}</h4>
+<h4 class="my-1 text-center">Amount Available : $ {{cst.balance}}</h4>
+
+<button type="button" class="btn btn-primary btn-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Transfer Money
+</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Transfer Money</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form method="POST">
+                    <div class="input-group">
+                        <select class="form-select" id="sno" name="sno">
+                            <option selected>Choose...</option>
+                            {% for cstmer in allrows %}
+                            <option value="{{cstmer.sno}}">{{cstmer.name}}</option>
+                            {% endfor %}
+                        </select>
+                        <button class="btn btn-secondary" type="button">@gmail.com</button>
+                    </div>
+                    <div class="input-group my-3">
+                        <span class="input-group-text">$</span>
+                        <input type="text" class="form-control" name="Amount" id="Amount"
+                            aria-label="Amount (to the nearest dollar)">
+                        <span class="input-group-text">.00</span>
+                    </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Transfer</button>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+<a href="/transfer/{{cst.name}}"><button type="button" class="btn-2 btn btn-primary">Transfer History </button>
+</a>
+{% endblock body %}
