@@ -77,3 +77,95 @@ img {
 .error {
     min-height: 56vh;
 }
+
+/* Demo */
+/* Color Variables */
+/* Social Icon Mixin */
+/* Social Icons */
+.social-media-div {
+    font-size: 1.8em;
+}
+
+.social-media-div p,
+.social-media-footer p {
+    margin: 0 0.1em;
+}
+
+.social-media-div .icon-button {
+    margin-bottom: 10px;
+}
+
+.social-media-div .icon-button i {
+    color: white;
+    border-radius: 2.6rem;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.5rem;
+    height: 2.6rem;
+    line-height: 2.6rem;
+    margin: 0 5px;
+    position: relative;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 2.6rem;
+    margin-bottom: 10px;
+    transition: 0.2s ease-in;
+}
+
+.facebook i {
+    background-color: #3b5998;
+}
+
+.linkedin i {
+    background-color: #0e76a8;
+}
+
+.github i {
+    background-color: #333;
+}
+
+.gitlab i {
+    background-color: #fca326;
+}
+
+.google i {
+    background-color: #ea4335;
+}
+
+.twitter i {
+    background-color: #1da1f2;
+}
+
+.whatsapp i {
+    background-color: #25D366;
+}
+
+.instagram i {
+    background-image: linear-gradient(to bottom left, #8a3ab9, #e95950, #fbad50);
+
+}
+
+/* Hover Transition */
+.twitter i:hover,
+.google i:hover,
+.gitlab i:hover,
+.github i:hover,
+.linkedin i:hover,
+.facebook i:hover,
+.instagram i:hover,
+.whatsapp i:hover,
+.stack-overflow i:hover,
+.medium i:hover {
+    background-color: black;
+    background-image: linear-gradient(black, black)
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+    .social-media-div {
+        text-align: center;
+    }
+}

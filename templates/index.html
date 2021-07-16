@@ -18,6 +18,8 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href=" {{ url_for('static', filename='CSS/style.css') }} ">
+    <script src="https://kit.fontawesome.com/6fec0cbbd5.js" crossorigin="anonymous"></script>
+
     <title>{% block title %}{% endblock title %}</title>
 </head>
 
@@ -54,9 +56,11 @@
         {% block body %}
         {% endblock body %}
     </div>
-    <footer class="bg-secondary text-white">
-        Copyright &copy; 2021 by S<a class="text-decoration-none text-uppercase fst-italic" style="color:white;"
-            href="/"> <span> parks Ban </span> </a> k | All rights reserved.
+    <footer class="bg-secondary text-white d-flex justify-content-centera">
+        <div>
+            Copyright &copy; 2021 by<a class="text-decoration-none text-uppercase fst-italic" style="color:white;"
+                href="/"> <span> Sparks Bank </span> </a> | All rights reserved.
+        </div>
     </footer>
 </body>
 
