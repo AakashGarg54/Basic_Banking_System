@@ -6,8 +6,6 @@ app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///datebase.db"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
-
-
 class customer_details(db.Model):
     sno = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(500), nullable=False)
