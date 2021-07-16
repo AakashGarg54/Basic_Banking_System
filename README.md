@@ -20,6 +20,15 @@ The main purpose is to introduce how to implement the essential elements in web 
 
 For more basic knowledge of Flask, you can refer to [a tutorial on Tutorialspoint](https://www.tutorialspoint.com/flask/).
 
+## Requirements
+
+- Framework -> Flask
+
+- Database -> SQLite
+
+- UI framework -> Bootstrap
+
+- Language used -> HTML, CSS, JS and Python
 
 ## How to Run
 
@@ -55,8 +64,3 @@ A few accounts were set for testing, like ***admin*** (password: admin), ***test
 - https://flask.palletsprojects.com/en/2.0.x/
 
 
-
-## Credict
-Image private.jpg: https://commons.wikimedia.org/wiki/File:(315-365)_Locked_(6149414678).jpg
-
-Image public.jpg: https://commons.wikimedia.org/wiki/File:Drown%3F!_(131380682).jpg
